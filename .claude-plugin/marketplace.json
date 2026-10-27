@@ -1,0 +1,35 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "transitions-dev-marketplace",
+  "description": "Production-ready UI motion skills for Claude Web / Cowork: install, refine, and generate accessible interface transitions.",
+  "owner": {
+    "name": "Transitions.dev",
+    "url": "https://transitions.dev"
+  },
+  "plugins": [
+    {
+      "name": "transitions-dev",
+      "displayName": "Transitions.dev",
+      "source": "./",
+      "description": "Skills-only UI motion toolkit with 35 portable transitions, a motion-token polish workflow, and AI-generation reveal effects. Works in Claude Web / Cowork without a local CLI, MCP server, hook, or API key.",
+      "author": {
+        "name": "Transitions.dev",
+        "url": "https://transitions.dev"
+      },
+      "category": "design",
+      "homepage": "https://transitions.dev",
+      "repository": "https://github.com/osa822630-droid/transitions.dev",
+      "license": "SEE LICENSE IN LICENSE",
+      "keywords": [
+        "ui",
+        "css",
+        "motion",
+        "transitions",
+        "animation",
+        "accessibility",
+        "design",
+        "frontend"
+      ]
+    }
+  ]
+}

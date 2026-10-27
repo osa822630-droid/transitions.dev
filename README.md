@@ -4,6 +4,29 @@ Transitions.dev is an interactive collection of reusable CSS transitions. Each c
 
 Live site: https://transitions.dev/
 
+## Claude Web / Cowork marketplace
+
+This repository is a **skills-only Claude marketplace**. It can be added from Claude Web / Cowork's **Add marketplace** flow — no Claude Code install, local CLI, MCP server, hook, API key, or paid Transitions plan is required for these free skills.
+
+1. In Claude Web / Cowork, open **Plugins** and choose **Add marketplace**.
+2. Add this fork's repository URL: `https://github.com/osa822630-droid/transitions.dev`.
+3. Install **Transitions.dev** from the `transitions-dev-marketplace` marketplace.
+4. Work in a project and ask Claude for a UI transition, for example: “Add an accessible animated dropdown,” “polish the motion in this project,” or “make this card appear as if an AI generated it.”
+
+The marketplace exposes these project-aware skills:
+
+- **Transitions.dev** — 35 portable CSS/JS UI transitions and the decision rules for applying them.
+- **Transitions Polish** — audits existing motion and proposes token-based timing, easing, distance, scale, and blur refinements before editing.
+- **Transitions UI generation** — creates the dotted wireframe-to-UI, text, and image reveal effects for AI-generated interfaces.
+
+It intentionally contains only Markdown skills and their local assets so it is suitable for Claude Web / Cowork. The optional `transitions-agent` CLI, hosted fix service, and MCP server are separate developer tools and are not installed by this marketplace.
+
+To keep the addable marketplace valid after future changes, run:
+
+```bash
+npm run validate:claude-marketplace
+```
+
 ## Transitions
 
 | # | Name | What it shows |

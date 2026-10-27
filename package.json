@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build/extract.mjs"
+    "build": "node build/extract.mjs",
+    "validate:claude-marketplace": "node scripts/validate-claude-marketplace.mjs"
   }
 }
