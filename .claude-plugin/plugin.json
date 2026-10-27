@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "transitions-dev",
+  "displayName": "Transitions.dev",
+  "version": "1.0.0",
+  "description": "Production-ready UI motion skills: install accessible transitions, tune existing motion, and build AI-generation reveal effects. Skills-only for Claude Web / Cowork.",
+  "icon": ".claude-plugin/icon.png",
+  "author": {
+    "name": "Transitions.dev",
+    "url": "https://transitions.dev"
+  },
+  "homepage": "https://transitions.dev",
+  "repository": "https://github.com/osa822630-droid/transitions.dev",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "ui",
+    "css",
+    "motion",
+    "transitions",
+    "animation",
+    "accessibility",
+    "design",
+    "frontend"
+  ]
+}

@@ -1,0 +1,33 @@
+name: Validate Claude marketplace
+
+on:
+  pull_request:
+    paths:
+      - ".claude-plugin/**"
+      - "skills/**"
+      - "scripts/validate-claude-marketplace.mjs"
+      - "package.json"
+      - ".github/workflows/validate-claude-marketplace.yml"
+  push:
+    branches: [main]
+    paths:
+      - ".claude-plugin/**"
+      - "skills/**"
+      - "scripts/validate-claude-marketplace.mjs"
+      - "package.json"
+      - ".github/workflows/validate-claude-marketplace.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate marketplace payload
+        run: npm run validate:claude-marketplace
+      - name: Validate the Claude marketplace schema
+        run: npx --yes @anthropic-ai/claude-code@2.1.311 plugin validate .
